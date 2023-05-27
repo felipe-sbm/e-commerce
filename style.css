@@ -15,9 +15,7 @@ header {
   border: 2px #f2f2f2;
 }
 nav {
-  background-image: linear-gradient(to bottom right, antiquewhite, #a09f81);
   padding: 25px;
-  color:antiquewhite;
 }
 nav a {
   color: black;
