@@ -1,225 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="ptbr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atividade de Front-End 28/04/2023 - por: Felipe SBM</title>
-    <link rel="stylesheet" href="https://felipe-sbm.github.io/bio/style.css">
-    <script scr="https://felipe-sbm.github.io/bio/script.js"></script>
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="./scripts/style.css">
+    <link rel="stylesheet" href="./scripts/script.js">
   </head>
   <body>
-    <header>
-      <img
-        src="https://arcticmonkeys.com/wp-content/uploads/2022/08/arctic-monkeys-the-car-1.png"
-        alt="Arctic Monkeys"
-      />
+    <header class="navbar">
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
     </header>
+    <div id="lado-esquerdo"></div>
+    <div id="bandeja">
+      <br /><br /><br />
+      <img id="sbm" src="./imgs/sbm.webp" alt="Sua Imagem" />
+      <br />
+      <h1>Felipe SBM</h1>
+      <hr style="color: #0000; width: 20%" />
+      <br />
+      <p style="font-family: 'Courier New', Courier, monospace">
+        Programador e Desingner Gráfico
+      </p>
+      <!--Rodapé da bandeja-->
+      <div id="bandeja-footer">
+        <a href="https://www.facebook.com/sbmfelipe">
+          <img src="./imgs/facebook.png" alt="facebook" />
+        </a>
 
-    <nav>
-      <ul></ul>
-    </nav>
+        <a href="https://twitter.com/SbmFelipe">
+          <img src="./imgs/twitter.png" alt="twitter" />
+        </a>
 
-    <main>
-      <article>
-        <h2>The Car (álbum)</h2>
-        <hr style="border-color: black" />
-        <p>
-          The Car é o sétimo álbum de estúdio da banda inglesa de rock
-          alternativo Arctic Monkeys, anunciado em 24 de agosto de 2022 e
-          lançado em 21 de outubro de 2022. O disco tem <br />
-          a produção de James Ford e todas as letras são compostas pelo
-          vocalista, guitarrista e principal letrista, Alex Turner. O disco foi
-          gravado entre 2019 e 2021 em Butley Priory em <br />
-          Suffolk, RAK Studios em Londres e La Frette em Paris.
-        </p>
-        <h3>Capa do álbum</h3>
-        <p style="overflow: hidden;">
-          A foto da capa é uma fotografia do baterista da banda, Matt Helders,
-          tirada em Los Angeles, nos Estados Unidos.
-        </p>
-        <div class="container">
-          <img
-            class="album"
-            src="https://townsquare.media/site/838/files/2022/08/attachment-arctic-monkeys-car.jpeg?w=1600&q=75"
-            alt="The Car"
-          />
-          <img
-            src="https://www.pngmart.com/files/6/Vinyl-PNG-Free-Download.png"
-            id="imagem"
-            class="girando"
-            onclick="pararAnimacao()"
-          />
-        </div>
-        <h3>Produção</h3>
-        <p>
-          Segundo Alex Turner em entrevista à revista The Big Issue, The Car
-          continua de onde Tranquility Base Hotel & Casino parou, porém, segundo
-          ele: "a ficção científica está de fora. <br> Estamos de volta à terra".
-          No geral o disco segue uma versão mais dinâmica do trabalho anterior.
-          O processo de gravação foi inspirado por lendas do rock n' roll como
-          Led Zeppelin <br> e Rolling Stones "Tem um monte de discos do Led
-          Zeppelin e dos Stones em que começam gravando em uma casa no interior
-          e resolvem fazer overdubs em outros lugares. [...] <br> Pegamos todos
-          equipamentos e levamos para vários outros lugares”.
-        </p>
-        <h3>Produção e lançamento</h3>
-        <p>
-          O baterista da banda, Matt Helders, confirmou que o disco estava
-          estava "praticamente pronto" em novembro de 2021. Em maio de 2022, ele
-          revelou que o novo álbum "continuava, musicalmente, onde Tranquility
-          <br />
-          Base Hotel & Casino parou", e que "nunca voltariam ao som de R U Mine?
-          novamente". The Car foi anunciado oficialmente em 24 de agosto de 2022
-          e lançou no dia 21 de outubro do mesmo ano.
-        </p>
-        <h4>Singles</h4>
-        <p>
-          O primeiro single do disco, "There’d Better Be a Mirrorball", foi
-          lançado em 30 de agosto de 2022, com videoclipe dirigido por Alex
-          Turner. O vídeo mostra a banda durante o processo de gravação do
-          álbum, gravado <br />
-          pelo vocalista Alex Turner com uma filmadora 16mm. A canção é a
-          primeira música inédita da banda em 4 anos. Embora tenha sido o
-          primeiro single a ser lançado oficialmente, a faixa "I Ain’t Quite
-          Where I Think I Am" <br />
-          já era conhecida do público, tendo sido executada em 23 de agosto de
-          2022 no festival suíço Zürich Openair. "There’d Better Be A
-          Mirrorball", "Body Paint" e "Mr Schwartz" foram executadas ao vivo
-          pelo primeira vez <br />
-          em 22 de setembro de 2022 em Nova Iorque no Kings Theatre em Brooklyn,
-          em um show fechado no qual foram proibidos celulares e equipamentos de
-          gravação. O single Body Paint foi lançado uma semana depois, <br />
-          em 29 de setembro, acompanhado de um videoclipe dirigido por Brook
-          Linder, que usou filme fotográfico para realizar a gravação das
-          imagens. Quatro dias antes do lançamento do álbum, a banda lançou o
-          single <br />
-          "I Ain't Quite Where I Think I am" oficialmente. A canção foi lançada
-          com um videoclipe que mostrava sua performance ao vivo no Kings
-          Theatre.
-        </p>
-        <h3>Recepção da crítica</h3>
-        <p>
-          The Car recebeu críticas geralmente positivas da imprensa
-          especializada. A revista DIY descreve o álbum como um "luxuoso
-          soft-rock", mais próximo de uma trilha sonora de cinema que Alex e
-          banda já produziu até então. <br />
-          Segundo a UNCUT Magazine The Car "apresenta uma enxurrada de cordas e
-          solos de guitarra que parecem ter sido meticulosamente escavados do
-          Trident Studios de 1973".
-        </p>
-        <h3>Faixas</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>N.º</th>
-              <th>Título</th>
-              <th>Duração</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1.</td>
-              <td>"There’d Better Be a Mirrorball"</td>
-              <td>4:25</td>
-            </tr>
-            <tr>
-              <td>2.</td>
-              <td>"I Ain’t Quite Where I Think I Am"</td>
-              <td>3:11</td>
-            </tr>
-            <tr>
-              <td>3.</td>
-              <td>"Sculptures Of Anything Goes"</td>
-              <td>3:59</td>
-            </tr>
-            <tr>
-              <td>4.</td>
-              <td>"Jet Skis On The Moat"</td>
-              <td>3:17</td>
-            </tr>
-            <tr>
-              <td>5.</td>
-              <td>"Body Paint"</td>
-              <td>4:50</td>
-            </tr>
-            <tr>
-              <td>6.</td>
-              <td>"The Car"</td>
-              <td>3:18</td>
-            </tr>
-            <tr>
-              <td>7.</td>
-              <td>"Big Ideas"</td>
-              <td>3:57</td>
-            </tr>
-            <tr>
-              <td>8.</td>
-              <td>"Hello You"</td>
-              <td>4:04</td>
-            </tr>
-            <tr>
-              <td>9.</td>
-              <td>"Mr Schwartz"</td>
-              <td>3:30</td>
-            </tr>
-            <tr>
-              <td>10.</td>
-              <td>"Perfect Sense"</td>
-              <td>2:47</td>
-            </tr>
-          </tbody>
+        <a href="">
+          <img src="./imgs/linkedin.png" alt="linkedin" />
+        </a>
 
-          <!-- Duração total -->
-          <!-- Você pode adicionar essa linha abaixo da tabela para mostrar a duração total -->
-          <!-- Certifique-se de substituir "37:18" pelo tempo total correto -->
-          <!-- Se você quiser, pode adicionar um estilo CSS para formatar a tabela -->
-          <!-- Mas isso é opcional -->
-          <!-- Aqui está um exemplo de estilo CSS que você pode usar para formatar a tabela -->
-          <!-- table, th, td { border: 1px solid black; border-collapse: collapse; padding: 5px; } -->
-          <!--<tfoot>-->
-          <!--  <tr>-->
-          <!--    <th colspan="2">Duração total:</th>-->
-          <!--    <th>37:18</th>-->
-          <!--  </tr>-->
-          <!--</tfoot>-->
-        </table>
+        <a href="https://www.instagram.com/felipe_sbm">
+          <img src="./imgs/instagram.png" alt="instagram" />
+        </a>
 
-        <h2>Pessoal</h3>
-        <hr style="border-color: black" />
-        <p>
-
-          Artwork
-          
-          Matt Halders – photography
-        </p>
-        <ul>Arctic Monkeys
-          <li>Alex Turner – vocal, guitarra, teclados, piano, sintetizador, cordas</li>
-            <li>Jamie Cook – guitarra , sintetizador , órgão , guitarra slide</li>
-            <li>Nick O'Malley – baixo</li>
-            <li>Matt Helders – baterias</li>
-        </ul>
-        <ul>
-          Técnico
-          <li>James Ford – produção, engenharia, mixagem</li>
-        </ul>
-        <ul>Músicos adicionais
-          <li>Tom Rowley – guitarra</li>
-          <li>Tyler Parkford – backing vocal</li>
-          <li>James Ford - cordas</li>
-          <li>Briget Samuels - cordas</li>
-        </ul>
-      </article>
-    </main>
-
-    <footer>
-      <img
-        src="https://www.ufrn.br/resources/documentos/identidadevisual/logotipo/logotipo_negativo.png"
-        alt="UFRN"
-        style="width: 100px"
-      />
-      Html by Felipe SBM's, the C&O of SoftDriver™ INC. © Copiryght 2023, all
-      rights reserveds.
-    </footer>
+        <a href="https://github.com/felipe-sbm/">
+          <img src="./imgs/github.png" alt="github" />
+        </a>
+      </div>
+    </div>
+    <div class="bio">
+      <div class="ola"><p>Olá</p></div>
+      <p>
+        Muito prazer e obrigado por estar aqui! Me chamo Felipe Samuel, e
+        comecei na carreira de programação no ano de 2022 pelo IMD na UFRN, e
+        estou no meu segundo semestre. Pretendo me aprofundar mais fazendo o
+        bacharel e graduações.
+        <button>Currículo</button>
+        <button>Contato</button>
+      </p>
+    </div>
   </body>
 </html>
