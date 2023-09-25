@@ -19,11 +19,12 @@ img {
   background-color: #f2f2f2;
   position: fixed;
   z-index: 9;
+  height: 50px;
   width: 100%;
-
   font-family: "Courier New", Courier, monospace;
   top: 0;
   left: 0;
+  box-shadow: 5px 5px 10px rgba(63, 63, 63, 0.505);
 }
 .navbar a {
   float: left;
@@ -32,7 +33,6 @@ img {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  margin: 1%;
 }
 #lado-esquerdo {
   position: fixed;
@@ -43,8 +43,13 @@ img {
   background-color: #5e6d55;
   overflow: hidden;
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
 #bandeja {
   position: fixed;
+  float: left;
   top: 20%;
   left: 25%;
   width: 350px;
@@ -59,26 +64,30 @@ img {
   background-color: #f2f2f2;
   box-shadow: 10px 10px 20px rgba(63, 63, 63, 0.356);
 }
-#bio {
-  left: 90%;
-  background-color: #a0a081;
+.bio {
+  position: absolute;
+  top: 25%;
   width: 350px;
-  height: 500px;
+  background-color: #939e8c;
+  margin-left: 10px;
 }
-#ola {
+.ola {
   font-weight: 100px;
   right: 90%;
   color: #5e6d55;
+  width: 100px;
+  position: absolute;
+  margin-left: 10px;
 }
 .line {
   width: 55%;
   border-color: #000;
 }
 button {
-  background-color:#5e6d55;
+  background-color: #5e6d55;
   margin: 10px;
   color: #f2f2f2;
   border-radius: 10px;
   width: 90px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
