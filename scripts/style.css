@@ -35,10 +35,10 @@ img {
   text-decoration: none;
 }
 #lado-esquerdo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 35%;
+  position: sticky;
+  top: 1rem;
+  left: 1rem;
+  width: 35rem;
   height: 100%;
   background-color: #5e6d55;
   overflow: hidden;
@@ -52,8 +52,8 @@ img {
   float: left;
   top: 20%;
   left: 25%;
-  width: 350px;
-  height: 500px;
+  width: 22rem;
+  height: 32rem;
   background-color: #939e8c;
 }
 #bandeja-footer {
@@ -65,19 +65,28 @@ img {
   box-shadow: 10px 10px 20px rgba(63, 63, 63, 0.356);
 }
 .bio {
+  top: 20rem;
   position: absolute;
-  top: 25%;
   width: 350px;
-  background-color: #939e8c;
-  margin-left: 10px;
+  margin-left: 30rem;
+  display: flex;
+  width: 399px;
+  height: 136px;
+  flex-direction: column;
+  justify-content: center;
+  color: #1d1d1d;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .ola {
-  font-weight: 100px;
-  right: 90%;
-  color: #5e6d55;
-  width: 100px;
-  position: absolute;
-  margin-left: 10px;
+  color: #1e1e1e;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .line {
   width: 55%;
@@ -85,9 +94,15 @@ img {
 }
 button {
   background-color: #5e6d55;
-  margin: 10px;
-  color: #f2f2f2;
+  margin: 2rem;
   border-radius: 10px;
-  width: 90px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  width: 10rem;
+  height: 2, 5rem;
+  justify-content: center;
 }
