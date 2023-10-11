@@ -1,10 +1,11 @@
 import Link from "next/link";
 import React from "react";
-import Particles from "./componentes/particlulas";
+import Particles from "./componentes/particulas";
 
 const navigation = [
   { name: "Projetos", href: "/projetos" },
   { name: "Contato", href: "/contato" },
+  { name: "Curriculum", href: "/curriculum" },
 ];
 
 export default function Home() {
@@ -31,7 +32,6 @@ export default function Home() {
       <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
         Felipe SBM
       </h1>
-
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
@@ -43,9 +43,8 @@ export default function Home() {
           >
             Felipe Samuel
           </Link>
-          , e comecei na carreira de programação no ano de 2022 pelo 
-          <br />
-          and working on{" "}
+          , e comecei na carreira de programação no ano de 2022 pelo
+          <br />{" "}
           <Link
             target="_blank"
             href="https://portal.imd.ufrn.br/portal/"
@@ -53,7 +52,7 @@ export default function Home() {
           >
             IMD
           </Link>{" "}
-		  na UFRN, e estou no meu terceiro semestre. Pretendo me aprofundar mais
+          na UFRN, e estou no meu terceiro semestre. Pretendo me aprofundar mais
           fazendo o bacharel e graduações.
         </h2>
       </div>

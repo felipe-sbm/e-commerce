@@ -46,7 +46,7 @@ export default async function ProjectsPage() {
 						Projects
 					</h2>
 					<p className="mt-4 text-zinc-400">
-						Some of the projects are from work and some are on my own time.
+						Alguns projetos que fiz enquanto estudava programação.
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
@@ -86,7 +86,7 @@ export default async function ProjectsPage() {
 								</p>
 								<div className="absolute bottom-4 md:bottom-8">
 									<p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
-										Read more <span aria-hidden="true">&rarr;</span>
+										Leia mais <span aria-hidden="true">&rarr;</span>
 									</p>
 								</div>
 							</article>
