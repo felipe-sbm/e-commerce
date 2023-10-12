@@ -1,11 +1,12 @@
 import Link from "next/link";
-import React from "react";
 import Particles from "./componentes/particulas";
+import React from "react";
 
 const navigation = [
   { name: "Projetos", href: "/projetos" },
   { name: "Contato", href: "/contato" },
   { name: "Curriculum", href: "/curriculum" },
+  { name: "Lista de visitantes (em breve!)", href: "/lista" },
 ];
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
       <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
         Felipe SBM
       </h1>
+      <img src="./public/card.gif" alt="Card do SBM" />
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
@@ -50,9 +52,9 @@ export default function Home() {
             href="https://portal.imd.ufrn.br/portal/"
             className="underline duration-500 hover:text-zinc-300"
           >
-            IMD
+            IMD na UFRN
           </Link>{" "}
-          na UFRN, e estou no meu terceiro semestre. Pretendo me aprofundar mais
+          , e estou no meu terceiro semestre. Pretendo me aprofundar mais
           fazendo o bacharel e graduações.
         </h2>
       </div>
