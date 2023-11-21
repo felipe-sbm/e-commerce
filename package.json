@@ -1,6 +1,6 @@
 {
-  "name": "chronark.com",
-  "version": "0.1.0",
+  "name": "sbm",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -50,6 +50,6 @@
       "@opentelemetry/sdk-trace-base": "1.13.0",
       "@opentelemetry/sdk-trace-node": "1.13.0",
       "@opentelemetry/semantic-conventions": "1.13.0"
-    } 
+    }
   }
 }
