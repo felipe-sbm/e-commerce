@@ -20,7 +20,7 @@ const socials = [
 	{
 		icon: <Linkedin size={22} />,
 		href: "https://www.linkedin.com/in/felipe-sbm/",
-		label: "Github",
+		label: "LinkedIn",
 		handle: "Felipe Samuel",
 	},
 ];
