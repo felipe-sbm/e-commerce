@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 		default: "SBM",
 		template: "%s | SBM",
 	},
-	description: "Software engineer at upstash.com and founder of planetfall.io",
+	description: "Developer and student of bachelor's degree in information technologies",
 	openGraph: {
 		title: "SBM",
 		description:
-			"Software engineer at upstash.com and founder of planetfall.io",
+			"Developer and student of bachelor's degree in information technologies",
 		url: "https://fsbm.vercel.app",
 		siteName: "SBM",
 		images: [
 			{
-				url: "https://fsbm.vercel.app/og.png",
+				url: "/public/logo.png",
 				width: 1920,
 				height: 1080,
 			},
