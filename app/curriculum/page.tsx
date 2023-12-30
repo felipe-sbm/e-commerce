@@ -1,29 +1,54 @@
 "use client";
-import { Instagram, Github, Linkedin,} from "lucide-react";
+import { Smile, SmilePlus, FileBadge, GraduationCap, PersonStanding, Languages, MapPin,} from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../componentes/nav";
 import { Card } from "../componentes/card";
 
 const socials = [
 	{
-		icon: <Instagram size={22} />,
-		href: "https://instagram.com/felipe_sbm",
-		label: "Instagram",
-		handle: "@felipe_sbm",
+		icon: <Smile size={22} />,
+		href: "",
+		label: "",
+		handle: "Sobre mim",
 	},
 	{
-		icon: <Github size={22} />,
-		href: "https://github.com/felipe-sbm",
-		label: "Github",
-		handle: "felipe-sbm",
+		icon: <SmilePlus size={22} />,
+		href: "",
+		label: "Sou um programador altamente motivado e apaixonado por tecnologia. Meu objetivo é trabalhar em uma empresa de tecnologia líder no mercado, onde possa aplicar minhas habilidades em programação para desenvolver soluções inovadoras e eficientes para a empresa.",
+		handle: "Objetivo profissional",
 	},
 	{
-		icon: <Linkedin size={22} />,
-		href: "https://www.linkedin.com/in/felipe-sbm/",
-		label: "LinkedIn",
-		handle: "Felipe Samuel",
+		icon: <FileBadge size={22} />,
+		href: "",
+		label: "",
+		handle: "Certificados",
+	},
+	{
+		icon: <GraduationCap size={22} />,
+		href: "",
+		label: "",
+		handle: "Formação acadêmica",
+	},
+	{
+		icon: <PersonStanding size={22} />,
+		href: "",
+		label: "Várias linguagens de programação; Desenvolvimento Full-Stack; Trabalho em equipe; Fácil socialização; Rápida adaptação a novas linguagens de programação",
+		handle: "Competencias pessoais",
+	},
+	{
+		icon: <Languages size={22} />,
+		href: "",
+		label: "Português (nativo) e inglês (proeficiente)",
+		handle: "Idiomas",
+	},
+	{
+		icon: <MapPin size={22} />,
+		href: "",
+		label: "Português (nativo) e inglês (proeficiente)",
+		handle: "Idiomas",
 	},
 ];
+
 
 export default function Example() {
 	return (
