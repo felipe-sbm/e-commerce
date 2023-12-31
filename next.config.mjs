@@ -1,6 +1,6 @@
 /* Olá, leitor! */
 /* Estou com um erro nesta parte do código */
-/* Faz "3" horas que estou tentando resolver */
+/* Faz "6" horas que estou tentando resolver */
 /* Mas não consigo encontrar o erro... */
 /* Ajude-me por favor! :) */
 
