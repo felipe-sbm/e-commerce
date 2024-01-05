@@ -37,25 +37,15 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-          Muito prazer e obrigado por estar aqui! Me chamo{" "}
-          <Link
-            target="_blank"
-            href="https://instagram.com/felipe_sbm"
-            className="underline duration-500 hover:text-zinc-300"
-          >
-            Felipe Samuel
-          </Link>
-          , e comecei na carreira de programação no ano de 2022 pelo
-          <br />{" "}
+          Programador e WebDesigner desde 2019, técnico no{" "}
           <Link
             target="_blank"
             href="https://portal.imd.ufrn.br/portal/"
             className="underline duration-500 hover:text-zinc-300"
           >
             IMD na UFRN
-          </Link>{" "}
-          , e estou no meu terceiro semestre. Pretendo me aprofundar mais
-          fazendo o bacharel e graduações.
+          </Link>
+          , seja bem-vindo.
         </h2>
       </div>
     </div>
