@@ -32,8 +32,6 @@ const socials = [
     href: "/certificados/page.tsx",
     label: (
       <div>
-        {"Sou colecionador de certificados, os principais certificados são:"}
-        <br /> <br />
         {"Progamação Full Stack (InfoWeb)"}
         <br />
         <strong>{"[IMD - UFRN]"}</strong>
