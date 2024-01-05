@@ -27,8 +27,17 @@ export const metadata: Metadata = {
 		type: "website",
 	},
 	icons: {
-		icon: '/favicon.ico', /**Público */
-		},
+		icon: [
+		  {
+			url: 'favicon-light.ico',
+			media: '(prefers-color-scheme: light)',
+		  },
+		  {
+			url: 'favicon.ico',
+			media: '(prefers-color-scheme: dark)',
+		  },
+		],
+	  },
 	robots: {
 		index: true,
 		follow: true,
