@@ -26,6 +26,9 @@ export const metadata: Metadata = {
 		locale: "en-US",
 		type: "website",
 	},
+	icons: {
+		icon: '/favicon.ico', /**Público */
+		},
 	robots: {
 		index: true,
 		follow: true,
