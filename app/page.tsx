@@ -6,7 +6,6 @@ const navigation = [
   { name: "Projetos", href: "/projetos" },
   { name: "Contato", href: "/contato" },
   { name: "Curriculum", href: "/curriculum" },
-  { name: "Lista de visitantes (em breve!)", href: "/lista" },
 ];
 
 export default function Home() {
