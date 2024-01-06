@@ -47,13 +47,6 @@ export const Navigation: React.FC = () => {
               Curriculum
             </Link>
             <Link
-              href="/lista"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
-            >
-              Lista de visitantes
-            </Link>
-
-            <Link
               href="/"
               className="duration-200 text-zinc-300 hover:text-zinc-100"
             >

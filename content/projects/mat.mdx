@@ -12,7 +12,8 @@ No site você encontra:
 - seção de comentários para alunos
 - uso de boostrap nas páginas
 - implementação do google ads, monetizando o site
-- cronograma de eventos futuros 
+- cronograma de eventos futuros
+- programado usando next.js
 
 No aplicativo você encontra:
 
@@ -20,161 +21,38 @@ No aplicativo você encontra:
 - banco de dados com lista de questões
 - vídeo aulas divididas por série/ano
 - disponibilidade para android
+- programado usando react.js
 
+Para acessar o site, basta clicar no link abaixo:
 
-```ts
-import { Tinybird } from "@chronark/zod-bird";
-import { z } from "zod";
+https://matematicacomcuscuz.com.br
 
-const tb = new Tinybird({ token: "token" });
+Para baixar o aplicativo, basta clicar no link abaixo:
+(exclusivo para dispositivos android)
 
-export const getEvents = tb.buildPipe({
-  pipe: "get_events__v1",
-  parameters: z.object({
-    tenantId: z.string(),
-  }),
-  data: z.object({
-    event: z.string(),
-    time: z.number().transform((t) => new Date(t)),
-  }),
-});
+https://play.google.com/store/apps?hl=pt_BR
 
+## Open Source
+O projeto é open source e pode ser encontrado no GitHub neste endereço:
+[GitHub](https://github.com/felipe-sbm/mat)
 
-const res = await getEvents({ tenantId: "chronark" })
-
-// res.data = {event: string, time: Date}[]
-```
-
-## Install
+Caso queira baixar os arquivos em seu computador, basta entrar no terminal do VSCODE e digitar:
 
 ```
-npm i @chronark/zod-bird
+git clone https://github.com/felipe-sbm/mat.git
+cd mat
 ```
 
+Caso você queira ultilizar os arquivos para criar o seu prórprio projeto, basta adicionar os créditos do criador em um arquivo LICENCE ou README.
+Após adicionar os créditos, você está liberado para a construção do seu projeto, tendo liberdade para edição e distribuição do seu projeto.
 
-## Ingesting Data
+## Agradecimentos especiais
 
-```ts
-// lib/tinybird.ts
-import { Tinybird } from "./client";
-import { z } from "zod";
+Bem, esse projeto não teria início sem a motivação do professor Igor Bruno (O Cuscuz), o desejo de ter um aplicativo e um site para ultilizar em ambientes escolares foi o principal fator para que houvesse a construção e desenvolvimento desse conjunto de aplicativo e site.
+Sem o conhecimento adiquirido no Instituto Metrópole Digital (IMD), não seria possível o desenvolvimento.
+Por último e menos importante, agradeço ao Oscar Kemuel, ele foi uma das principais fontes de suporte do projeto, agradeço muito pela presença.
 
-const tb = new Tinybird({ token: process.env.TINYBIRD_TOKEN! });
+Muito obrigado!
+Atenciosamente,
 
-export const publishEvent = tb.buildIngestEndpoint({
-  datasource: "events__v1",
-  event: z.object({
-    id: z.string(),
-    tenantId: z.string(),
-    channelId: z.string(),
-    time: z.number().int(),
-    event: z.string(),
-    content: z.string().optional().default(""),
-    metadata: z.string().optional().default(""),
-  }),
-});
-```
-
-```ts
-// somewhere.ts
-import { publishEvent } from "./lib/tinybird";
-
-await publishEvent({
-  id: "1",
-  tenantId: "1",
-  channelId: "1",
-  time: Date.now(),
-  event: "test",
-  content: "test",
-  metadata: JSON.stringify({ test: "test" }),
-});
-```
-
-
-
-## Querying Endpoints
-
-```ts
-// lib/tinybird.ts
-import { Tinybird } from "./client";
-import { z } from "zod";
-
-const tb = new Tinybird({ token: process.env.TINYBIRD_TOKEN! });
-
-export const getChannelActivity = tb.buildPipe({
-  pipe: "get_channel_activity__v1",
-  parameters: z.object({
-    tenantId: z.string(),
-    channelId: z.string().optional(),
-    start: z.number(),
-    end: z.number().optional(),
-    granularity: z.enum(["1m", "1h", "1d", "1w", "1M"]),
-  }),
-  data: z.object({
-    time: z.string().transform((t) => new Date(t).getTime()),
-    count: z
-      .number()
-      .nullable()
-      .optional()
-      .transform((v) => (typeof v === "number" ? v : 0)),
-  }),
-});
-```
-
-```ts
-// somewhere.ts
-import { getChannelActivity } from "./lib/tinybird";
-
-
-const res = await getChannelActivity({
-   tenantId: "1",
-   channelId: "1",
-   start: 123,
-   end: 1234,
-   granularity: "1h"
-})
-
-```
-`res` is the response from the tinybird endpoint, but now fully typed and the data has been parsed according to the schema defined in `data`.
-
-## Advanced
-
-### Caching
-
-You can add cache directives to each pipe.
-
-
-#### Disable caching (useful in Next.js where everything is cached by default)
-
-```ts
-tb.buildPipe({
-  pipe: "some_pipe__v1",
-  parameters: z.object({
-   hello: z.string()
-  }),
-  data: z.object({
-    response: z.string()
-  }),
-   opts: {
-      cache: "no-store" // <-------- Add this
-   };
-});
-
-```
-
-#### Cache for 15 minutes
-
-```ts
-
-tb.buildPipe({
-  pipe: "some_pipe__v1",
-  parameters: z.object({
-   hello: z.string()
-  }),
-  data: z.object({
-    response: z.string()
-  }),
-   opts: {
-      revalidate: 900 ;// <-------- Add this
-    };
-});
+Felipe SBM ¯\_(ツ)_/¯
