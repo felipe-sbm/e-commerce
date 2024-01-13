@@ -1,7 +1,7 @@
 <div align="center">
     <a href="https://fsbm.vercel.app"><h1 align="center">fsbm.vercel.app</h1></a>
 
-Meu protfolio foi criado com [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Contentful](https://www.contentful.com/), [Contentlayer](https://www.contentlayer.dev/) e publicado [Vercel](https://vercel.com/).
+Meu protfolio foi criado com [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Contentful](https://www.contentful.com/), [Contentlayer](https://www.contentlayer.dev/) e publicado na [Vercel](https://vercel.com/).
 
 </div>
 
