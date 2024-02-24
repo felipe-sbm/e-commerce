@@ -17,7 +17,7 @@ const socials = [
     icon: <Smile size={22} />,
     href: "",
     label:
-      "Muito prazer e obrigado por estar aqui! Me chamo Felipe Samuel, e comecei na carreira de programação no ano de 2019, mas só me aprofundei no ano de 2022 pelo IMD na UFRN , e estou no meu terceiro semestre. Pretendo me aprofundar mais fazendo o bacharel e graduações.",
+      "Muito prazer e obrigado por estar aqui! Me chamo Felipe Samuel, e comecei na carreira de programação no ano de 2019, mas só me aprofundei no ano de 2022 pelo IMD na UFRN. Estou no primeiro semestre do curso de engenharia da computação na ECT - UFRN. Estou em busca de uma oportunidade de emprego para excercer meus conhecimentos.",
     handle: "Sobre mim",
   },
   {
