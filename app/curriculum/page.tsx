@@ -40,13 +40,17 @@ const socials = [
         <br />
         <strong>{"[Microlins - Natal]"}</strong>
         <br /> <br />
-        {"Modelagem 3D [Blender e MAkeHuman]"}
+        {"Modelagem 3D (Blender e MAkeHuman)"}
         <br />
         <strong>{"[IMD - UFRN]"}</strong>
         <br /> <br />
         {"Curso de Inglês"}
         <br />
         <strong>{"[IFRS]"}</strong>
+        <br /> <br />
+        {"Engenharia da computação"}
+        <br />
+        <strong>{"[ECT - UFRN]"}</strong>
       </div>
     ),
     handle: "Certificados",
@@ -54,7 +58,7 @@ const socials = [
   {
     icon: <GraduationCap size={22} />,
     href: "",
-    label: "Ensino médio e técnico completo (2022-2024)",
+    label: "Ensino médio e técnico completo (2022-2024) e Graduação em engenharia da computação (2024-2028)",
     handle: "Formação acadêmica",
   },
   {
